@@ -1,9 +1,13 @@
 import random
 
-list = ["rice","1","2","3"]
-#player = 0
-
-#user = input("Enter your name: ")
-
+list = []
+player = 0
 seconds = random.randint(1, 180)
 
+for i in range (0, 11):
+    user = input("Enter your name: ")
+    list.append(user)
+
+for i in len(list):
+    list.pop(seconds / len(list))
+    print(user + "has been removed")
